@@ -1,109 +1,46 @@
 <!DOCTYPE html>
-<!-- Notes taken and bits of text that are created for understanding and testing purposes are commented out  -->
 <html>
 	<head>
-		<!-- charset controls the keyboard chars you can use  -->
 		<meta charset="utf-8"/>
-		<!-- viewport is the device type eg mobile vs desktop vs tablet etc -->
-    	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    
-		<!-- The title appears in the browser tab -->
-		<!-- To create a comment, write the text and then press ctrl + / and it will automatically turn what you just wrote into a comment  -->
-		<title> This is the title of the page </title>
-		<link rel="stylesheet" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="card.css">
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pacifico" rel="stylesheet">
+		<title> Happy Mother's Day </title>
 	</head>
-	<!-- Anything that shows up in browser window is body -->
-	<body>
-<!-- 		<p>Content</p> 
-		<h1> test</h1>
-		<h6> test</h6> -->
-		<!-- You don't want to use em and strong for style, you use it for emphasis. Things like e-readers interact with them differently for instance, if something is reading the text outloud it will yell "Strong" words -->
-<!-- 		<p> This is a <em> emphasized </em> text and <strong> important </strong> text. </p>
+	<body background="images/tulip_and_whitespace.jpeg">
+		<header>
+			<p> Happy Mother's Day</p>
+		</header>
+		<div class="row">
+		<nav>
+			<ul>
+				<li>
+					<a href="mom/pictures.html"> Pictures </a>
+				</li>
+				<li> 
+					<a href="mom/recipes.html"> Recipes</a>
+				</li>
+				<li> 
+					<a href="mom/poem.html"> Poem </a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section id="message">
+				<!-- This section will change on each page to correspond with what is in the dynamic_area -->
+				<p id="quote"> “My mother's gifts of courage to me were both large and small. <br/>The latter are woven so subtly into the fabric of my psyche <br/> I can hardly distinguish where she stops and I begin.”</p>
+				<p id="author"> - Maya Angelou </p> 
+			</section>
+			<!-- <section id="dynamic_area"> -->
+				<!-- This section will change on each page to correspond with what needs to be displayed on each page. This will vary greatly -->
+	<!-- 			<p id="main_quote">“My mother's gifts of courage to me were both large and small. The latter are woven so subtly into the fabric of my psyche that I can hardly distinguish where she stops and I begin.” </p>
+			</section> -->
 
-
-	 -->
-	 <div class="topnav">
-  		<a class="active" href="#home">Home</a>
-	  <a href="#news">News</a>
-	  <a href="#contact">Contact</a>
-	  <a href="#about">About</a>
+		</main>
 	</div>
-	 <h3>✿ Cupcake List ✿</h3>
-	 		<p>Cupcake ipsum dolor. Sit amet <strong>icing</strong> macaroon topping biscuit. Bonbon jelly wafer chocolate <span class="highlight">I love muffin pudding</span>. I love I love cotton candy tart. Muffin cake candy soufflé. Tart marzipan tootsie roll tart topping cupcake. Biscuit cupcake sweet cotton candy pudding.</p>
-	 	<h3> ※ Cupcake Cake Flavors ※ </h3>
-	 		<p>Lollipop tootsie roll caramels pie. Marshmallow danish I love topping. Dragée chocolate cake cake. Pudding pie I love I love pastry cupcake <span class="highlight">lollipop icing cookie.</span> I love donut chocolate. Topping cotton candy marshmallow dragée. Brownie pudding bonbon chupa chups powder chocolate bar. <span class="bold">I love ice cream pudding.</span></p>
-	 	<h3>  ⁂ Cupcake Icings ⁂ </h3>
-			<p>Icing gummi bears bonbon fruitcake bonbon chocolate bar. Fruitcake sugar plum lollipop <strong id="best_candy">dragée</strong> candy canes pie. Cotton candy donut soufflé liquorice tart jelly-o halvah I love. Chocolate bar dessert pudding lemon drops. Biscuit jujubes cookie liquorice I love. Candy cake I love marzipan <strong>ice cream</strong> pie. Gummi bears sweet chocolate cake sweet roll fruitcake chocolate bar. I love gummies topping. Pudding muffin jelly beans chupa chups jelly halvah croissant dragée croissant.</p>
-		<h4> Website</h4>
-			<!-- href  and target are attributes, the link "http:..." is the value which always needs to be in quotations (you can use double or single quotes, but you cannot mix them on the same value) -->
-			<p><a href='http://www.girldevelopit.com'> Girl Develop It - loads on same page</a></p>
-			<p><a href="http://www.girldevelopit.com" target="_blank"> Girl Develop It - loads on a new page</a></p>
-
-		<!-- this is an example of an absolute path -->
-		<img src="https://images.pexels.com/photos/356366/pexels-photo-356366.jpeg?cs=srgb&dl=blank-bloom-blossom-356366.jpg&fm=jpg" alt="tulip and notes" width=250>
-		<!-- this is an exmaple of a relative path  -->
-		<!-- You can leave alt tags empty, but you should always include them because it will identify that there is an image there to an e-reader -->
-		<img src="images/tulips_various.jpeg" alt="various tulips" width=250>
-		<!-- the br/ tag creates a break in the line so the text that follows starts on a new line -->
-		<p class="haiku"> My <strong>favorite</strong> dessert <br/><br/>
-			<!-- If you use multiple br/ tags then you will get multiple breaks -->
-			in a little frosty cup<br/>
-			Sweet Watermelon!!©</p>
-
-		<!-- There are unordered and ordered lists -->
-		<ul> List
-			<li> Thing </li>
-			<li> Thing</li>
-		</ul>
-		<ol> List too
-			<li>Thing 1</li>
-			<li> Thing 2</li>
-		</ol>
-
-<!-- This is a list that contains lists -->
-		<table> 
-			<thead>
-				<tr>
-					<th> Cupcake Flavors</th>
-					<th> Icing Flavors</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<ul>
-							<!-- You should only use an ID when the object is unique. You can use class when there are multiple objects are similar-->
-							<li class="first"> Chocolate</li>
-							<li class="second"> Vanilla</li>
-							<li class="third"> Red Velvet</li>
-						</ul>
-					</td>
-					<td>
-						<ul>
-							<li class="first"> Buttercream</li>
-							<li class="second"> Cream Cheese Vanilla</li>
-							<li class="third">Strawberry</li>
-						</ul>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-
-		<ul>
-			<li class="first"> First</li>
-			<li class="second"> Second </li>
-			<li class="third"> Third </li>
-			<li class="fourth">
-				<ul>
-					<li class="first-first"> 1 deep</li>
-					<li class="first-second"> 2 deep</li>
-					<li class="first-third"> 3 deep </li>
-				</ul>
-			</li>
-		</ul>
-
-		<div class="bottom"
+		<footer>
+			<p> F r o m : K i m...<3</p>
+		</footer>
+			
 	</body>
-
 </html>
