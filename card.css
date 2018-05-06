@@ -1,0 +1,102 @@
+body {
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+header {
+	font-family: 'Great Vibes', cursive;
+	font-size: 600%;
+	color: floralwhite;
+	margin-bottom:-20px;
+}
+
+nav {
+	font-family: 'Pacifico', cursive;
+	width:250px;
+	margin-left:70px;
+/*	float: left;
+border: solid;*/
+	font-size: 200%;
+	display: inline-block;
+
+}
+
+main {
+/*	border:solid;*/
+/*	width: 600px;
+	float: left;*/
+	width: calc(100vw - 500px);
+	display: inline-block;
+	position:absolute;
+	margin-left:50px;
+}
+
+nav ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top:0;
+}
+
+li {
+	border: solid;
+	border-width:5px;
+	border-color: pink;
+	padding:10%;
+	margin: 10%;
+	margin-top:0;
+	text-align:center;
+	background-color: lavender;
+}
+a:hover{
+	color:pink;
+}
+a:visited{
+	color: lightpink;
+}
+a:link {
+	color:lightpink;
+}
+
+#message {
+	font-size:250%;
+	color: floralwhite;
+	text-align:center;
+	background-color: pink;
+	border: dotted;
+	border-width: 10px;
+	border-color: lemonchiffon;
+	padding:30px;
+	height:320px;
+	margin:18px;
+	margin-top:0;
+}
+#message_pictures{
+	font-size:100%;
+	color: floralwhite;
+	text-align:left;
+	background-color: pink;
+	border: dotted;
+	border-width: 10px;
+	border-color: lemonchiffon;
+	padding:30px;
+	height:100px;
+	margin:18px;
+	margin-top:0;
+}
+#author {
+	float:right;
+	margin-right:200px;
+}
+
+footer {
+	position:fixed;
+	width:100%;
+	text-align:center;
+	bottom:0;
+	left: 0;
+	font-size:200%;
+	font-family: 'Great Vibes', cursive;
+	font-stretch: extra-expanded;
+	background-color:pink
+
+
+}

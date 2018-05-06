@@ -1,0 +1,115 @@
+/*This file is linked to in the index.html file in the head section*/
+/*You must keep a space between the selector and the curly bracket*/
+/*the colors can be hex, rgb, or the words*/
+/*example code:*/
+/*selector {
+	property: valyue;
+	property: value;
+/*}*/
+
+/*CSS is a cascading language which means that things you define later in the code take precedent over things from the beginning of the code*/
+
+
+
+
+
+/*You can write a number of font attributes is a single line*/
+/*example code*/
+p {
+	font: italic 12px serif;
+	font-family: "Arial";
+}
+
+body {
+	background-color: pink;
+}
+
+h3 {
+	font-style: italic;
+	color: mediumvioletred;
+}
+
+th {
+	font-style: ;
+}
+
+a:hover, a:focus{
+	color:yellow;
+}
+
+p strong{
+	color: maroon;
+	font-style: italic;
+}
+
+/*You can also style using classes and IDs. To use a class as a selector include a . before the class word. To use an ID as a selector include a # before the ID word */
+.first {
+	color: blue;
+}
+
+.second {
+	color:purple;
+}
+
+.third {
+	color: yellow;
+}
+
+.haiku {
+	color: red;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+table thead tr th {
+	font-family: "Arial";
+}
+
+#best_candy {
+	font-size: 150%;
+
+}
+
+li.first{
+	font-size:150%;
+}
+
+ul .first-first{
+	font-size:150%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: hotpink;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: pink;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #800000;
+    color: white;
+}
+
+.highlight {
+	background-color: teal;
+}
+.bold {
+	font-weight: bold;
+}
