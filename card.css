@@ -166,7 +166,13 @@ section#dynamic_area {
 	border-width: 10px;
 	border-color: lemonchiffon;	
 	padding:30px;
-	height: 455px;
+	height: 900px;
 	margin:18px;
 	margin-top:0;
+	margin-bottom:150px;
+}
+
+.highlight {
+	font-size:60px;
+	font-family: "Great Vibes", cursive;
 }
